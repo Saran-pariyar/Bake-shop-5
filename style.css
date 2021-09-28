@@ -1,0 +1,159 @@
+/* https://preview.colorlib.com/theme/luto/index.html */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+nav{
+    min-width: 100%;
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+        background: rgba(0,0,0,0.6);
+
+    
+}
+.logo{
+    font-family:cursive;
+    border-radius: 5px;
+    color: orangered;
+    /* color: white; */
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    max-height: 4rem;
+    font-size: 1.2rem;
+    width: 22rem;
+    justify-content: center;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.ham{
+    display: none;
+    font-size: 2rem;
+    color: #ffff;
+    padding: 2rem;
+}
+
+.ham:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+nav ul a{
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffff;
+}
+nav ul a:hover{
+    color: rgb(218, 154, 131);
+    opacity: 0.5;
+}
+
+/* nav bar ends  */
+
+.hero{
+    background: url(store.jpg) , rgba(0,0,0,0.3);
+    background-blend-mode: darken;
+    min-width: 100%;
+    min-height: 100vh;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    width: 40%;
+    border: 1px dotted #ffff;
+    padding: 2rem;
+    color: #ffff;
+    font-weight: 700;
+    text-align: center;
+}
+.main-text1{
+    font-size: 2.5rem;
+}
+.main-text button{
+    font-size: 1.2rem;
+    background: rgb(223, 64, 7);
+    color: #ffff;
+    border-radius: 20px;
+    width: 15rem;
+    padding: 0.5rem;
+    width: 10rem;
+    outline: none;
+    letter-spacing: 0.5rem;
+    border: none;
+}
+.main-text button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* details  */
+.detail{
+    background: #302939;
+    margin: 2rem 0;
+    color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* footer and contact  */
+last-section{
+    background:#000;
+}
+
+
+@media screen and (max-width:700px) {
+    /* for nav bar  */
+    nav{
+        margin: 0 ;
+        padding: 0;
+        background: rgba(0,0,0,0.7);
+ justify-content:space-between;
+ 
+    }
+    
+    
+    ul {
+        display: none;
+        min-width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background: rgba(0,0,0,0.7);
+        text-align: center;
+    }
+    ul a{
+min-width: 100%;
+        margin-top:1rem;
+    }
+    ul.show{
+        display: flex;
+    }
+    .ham{
+        display: block;
+        margin-right: 0.5rem;
+    }
+    /* hero section  */
+    .main-text{
+        width: 80%;
+    }
+
+    .detail{
+        flex-direction: column;
+    }
+    
+}
+
